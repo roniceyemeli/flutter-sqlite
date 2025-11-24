@@ -92,7 +92,7 @@ class SQLHelper {
     // 5. READ: Get all remaining items
     final List<Map<String, dynamic>> journals = await SQLHelper.getItems();
 
-    debugPrint("\n===================================");
+    debugPrint("\n==================================");
     debugPrint("== Final Remaining Items (READ ALL) ==");
     for (int i = 0; i < journals.length; i++) {
       debugPrint('${journals[i]['id'].toString()}: ${journals[i]['title']}');
